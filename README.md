@@ -21,9 +21,8 @@ håndværkere kan købe og sælge overskudsmaterialer og værktøj
 ## Firebase
 
 Firebase-konfigurationen ligger i `firebaseConfig.js`. Firestore skal være
-oprettet i Firebase Console, og reglerne skal tillade læsning og skrivning
-under udvikling.
+oprettet i Firebase Console. 
 
 ## Video
 
-https://youtube.com/shorts/BWKOqyhZRAc?feature=share
+[https://youtube.com/shorts/BWKOqyhZRAc?feature=share](https://youtube.com/shorts/sJZy0UREy4Q) 
