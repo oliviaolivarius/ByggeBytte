@@ -16,17 +16,18 @@ import { getLocalUserId } from '../utils/favorites';
 
 const categories = ['Mursten', 'Træ', 'Grus', 'Maling', 'Værktøj', 'Fliser', 'Isolering', 'Cement'];
 
-// formular til at oprette en ny annonce, indholdet gemmes ikke rigtigt,
-// det er bare til at vise at det kan lade sig gøre at "oprette" en annonce.
+// Formular til at oprette en ny annonce. Når brugeren trykker på knappen,
+// gemmes annoncen i Firestore (collectionen "listings") sammen med et lokalt
+// ejer-id, og brugeren sendes tilbage til forsiden.
 export default function CreateListingScreen({ navigation }) {
   // Ét state-felt per input - holder styr på hvad brugeren har skrevet.
   const [title, setTitle] = useState('');
   const [category, setCategory] = useState('');
   const [price, setPrice] = useState('');
   const [description, setDescription] = useState('');
-  // Styrer om bekræftelses kortet nederst skal vises.
-  // den ændres til true når brugeren trykker på "Opret annonce" knappen.
+  // saving er true mens annoncen gemmes, så knappen ikke kan trykkes flere gange.
   const [saving, setSaving] = useState(false);
+  // error indeholder en fejlbesked, hvis felter mangler, eller Firestore afviser at gemme.
   const [error, setError] = useState('');
 
   async function handleSubmit() {

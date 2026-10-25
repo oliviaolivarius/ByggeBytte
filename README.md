@@ -7,7 +7,7 @@ håndværkere kan købe og sælge overskudsmaterialer og værktøj
 
 - Annoncer gemmes i Firebase Firestore i collectionen `listings`.
 - De 8 eksisterende eksempelannoncer uploades automatisk første gang,
-	Firestore er tom.
+	Firestore er tom (seed-data).
 - Browse-skærmen opdateres automatisk, når annoncer ændres i Firestore.
 - Annoncer kan søges i realtid på titel og kategori.
 - Filteret "Kun byggematerialer" virker sammen med søgningen.
@@ -26,4 +26,4 @@ under udvikling.
 
 ## Video
 
-https://youtube.com/shorts/BWKOqyhZRAc?feature=share
+https://www.youtube.com/shorts/sJZy0UREy4Q

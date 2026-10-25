@@ -1,5 +1,6 @@
-// Fake annoncer til ByggeBytte, dette er lavet så jeg ikke skulle lave database. 
-// Det er også dem der vises på min app.
+// Eksempelannoncer til ByggeBytte, brugt som startdata (seed).
+// Første gang Firestore-databasen er tom, uploader BrowseScreen dem automatisk.
+// Herefter hentes alle annoncer fra Firestore, ikke direkte fra denne fil.
 // Objekterne eksporteres som en liste, så de kan importeres i andre filer.
 
 export const listings = [
